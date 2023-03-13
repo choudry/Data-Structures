@@ -1,22 +1,5 @@
+package BinaryTree
 
-data class Node (
-    var value: Any
-) {
-    var left: Node? = null
-    var right: Node? = null
-}
-
-class Stack<T> {
-    private val data: MutableList<T> = mutableListOf()
-
-    fun push(input: T) {
-        data.add(0, input)
-    }
-
-    fun pop(): T = data.removeAt(0)
-
-    fun isEmpty() = data.isEmpty()
-}
 fun depthFirstValues(root: Node) {
     /* Depth-First-Traversal
     Time Complexity = O(n) each node is visited only once
@@ -42,6 +25,10 @@ fun recursiveDepthFirstTraversal(root: Node?): List<Any> {
         return listOf(root.value) + leftValues + rightValues
     }
     return emptyList()
+}
+    //***********Breadth-First-Traversal*************
+fun breadthFirstValues(root: Node) {
+
 }
 
 fun main() {
