@@ -38,7 +38,6 @@ fun merge(input: List<Int>, start: Int, mid: Int, end: Int): MutableList<Int> {
 fun mergeSort(_input: List<Int>, start: Int, end: Int): MutableList<Int> {
 
     var input = _input.toMutableList()
-    println("Start: $start, End: $end, input: $input")
     if (start < end) {
         val mid = (start + end) / 2
         input = mergeSort(input, start, mid)
@@ -51,6 +50,9 @@ fun mergeSort(_input: List<Int>, start: Int, end: Int): MutableList<Int> {
 
 
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val number = listOf(5, -1, 3, 6, 2)
+    var sortedResult = mergeSort(number, 0, number.count() - 1)
+    println("SortedResult: $sortedResult")
+
 
 }
