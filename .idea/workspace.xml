@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5df0ea0e-a661-448a-b283-3dbc8b6c9c2a" name="Changes" comment="Create BinaryTree file and Node data class">
+    <list default="true" id="5df0ea0e-a661-448a-b283-3dbc8b6c9c2a" name="Changes" comment="Created Stack class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTree.kt" afterDir="false" />
     </list>
@@ -79,14 +79,33 @@
       <option name="project" value="LOCAL" />
       <updated>1678673583178</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created Stack class">
+      <created>1678676240639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678676240639</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Creation" />
     <MESSAGE value="Created mergeSort functions" />
     <MESSAGE value="Create BinaryTree file and Node data class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create BinaryTree file and Node data class" />
+    <MESSAGE value="Created Stack class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Stack class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/BinaryTree.kt</url>
+          <line>41</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
