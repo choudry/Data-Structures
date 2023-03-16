@@ -1,6 +1,6 @@
 package BinaryTree
 
-fun depthFirstValues(root: Node) {
+fun depthFirstTraversal(root: Node): List<Any> {
     /* Depth-First-Traversal
     Time Complexity = O(n) each node is visited only once
     Space Complexity = O(n)
@@ -15,7 +15,8 @@ fun depthFirstValues(root: Node) {
         current.right?.let { stack.push(it) }
         current.left?.let { stack.push(it) }
     }
-    result.forEach { println(it) }
+
+    return result
 }
 
 fun recursiveDepthFirstTraversal(root: Node?): List<Any> {
@@ -27,8 +28,29 @@ fun recursiveDepthFirstTraversal(root: Node?): List<Any> {
     return emptyList()
 }
     //***********Breadth-First-Traversal*************
-fun breadthFirstValues(root: Node) {
+/**
+ * Breadth first traversal can be done using queue only, so there's no recursive approach
+ * Time complexity = O(n) as every node is visited only once
+ * Space complexity = O(n) as every node is saved only once
+ */
+fun breadthFirstTraversal(root: Node?): List<Any> {
+        root?.let {
+            val queue = Queue<Node>()
+            val values: MutableList<Any> = mutableListOf()
+            queue.push(root)
 
+            while (queue.isNotEmpty()) {
+                val current = queue.shift()
+                values.add(current.value)
+
+                current.left?.let { queue.push(it) }
+                current.right?.let { queue.push(it) }
+            }
+
+            return values
+        }
+
+        return emptyList()
 }
 
 fun main() {
@@ -53,11 +75,9 @@ fun main() {
     b.left = d
     b.right = e
     c.right = f
-    depthFirstValues(a)
 
-    /*
-    Depth-First-Traversal using Recursion
-     */
-    val result = recursiveDepthFirstTraversal(a)
-    println(result)
+    println("Depth-First-Traversal: ${depthFirstTraversal(a)}")
+    println("Depth-First-Traversal(Recursive): ${recursiveDepthFirstTraversal(a)}")
+
+    println("Breadth-First-Traversal: ${breadthFirstTraversal(a)}")
 }

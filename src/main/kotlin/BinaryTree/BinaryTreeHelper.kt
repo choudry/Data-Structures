@@ -19,6 +19,9 @@ class Stack<T> {
     fun isEmpty() = data.isEmpty()
 }
 
+/**
+    Queue is a pipeline where value enters from one end and leaves from the other end.
+ */
 class Queue<U> {
     private val data: MutableList<U> = mutableListOf()
 
@@ -26,5 +29,9 @@ class Queue<U> {
         data.add(0, item)
     }
 
-    fun shift() = data[data.size - 1]
+    fun shift() = data.removeAt(data.size - 1)
+
+    fun isEmpty() = data.isEmpty()
+
+    fun isNotEmpty() = data.isNotEmpty()
 }
