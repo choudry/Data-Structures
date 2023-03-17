@@ -88,8 +88,40 @@ fun treeIncludesDepthFirst(root: Node?, target: Any): Boolean {
             treeIncludesBreadthFirst(rightNode, target)
         }
     }
-
     return false
+}
+
+/**
+ * Calculate the sum of all the node values of tree
+ */
+fun treeSum(root: Node?): Int {
+    root?.let {
+        val queue = Queue<Node>()
+        queue.push(root)
+        var sum = 0
+
+        while (queue.isNotEmpty()) {
+            val current = queue.shift()
+            if (current.value is Int) {
+                sum += current.value as Int
+            }
+
+            current.left?.let { queue.push(it) }
+            current.right?.let { queue.push(it) }
+        }
+
+        return sum
+    }
+
+    return 0
+}
+
+fun recursiveTreeSum(root: Node?): Int{
+    root?.let {
+        return root.value as Int + recursiveTreeSum(root.left) + recursiveTreeSum(root.right)
+    }
+
+    return 0
 }
 
 fun main() {
@@ -123,4 +155,28 @@ fun main() {
     println("\n *****Search Value*****")
     println("Breadth-First-Search: ${treeIncludesBreadthFirst(a, 3)}")
     println("Depth-First-Search: ${treeIncludesDepthFirst(c, 'F')}")
+
+    println("\n ***** Tree Sum *****")
+    val one = Node(1)
+    val two = Node(2)
+    val three = Node(3)
+    val four = Node(4)
+    val five = Node(5)
+    val six = Node(6)
+
+    one.left = two
+    one.right = three
+    two.left = four
+    two.right = five
+    three.right = six
+    /*
+        1
+     /     \
+    2       3
+  /   \       \
+ 4     5       6
+
+  */
+    println("Sum of tree: ${treeSum(one)}")
+    println("Recursive sum of tree: ${recursiveTreeSum(two)}")
 }

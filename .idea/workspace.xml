@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5df0ea0e-a661-448a-b283-3dbc8b6c9c2a" name="Changes" comment="Added breadth first traversal and comments">
+    <list default="true" id="5df0ea0e-a661-448a-b283-3dbc8b6c9c2a" name="Changes" comment="Search for a value in tree using breadthFirstTraversal and depthFirstTraversal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTree.kt" afterDir="false" />
     </list>
@@ -117,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678965733491</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Search for a value in tree using breadthFirstTraversal and depthFirstTraversal">
+      <created>1679023734656</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679023734656</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -128,7 +135,8 @@
     <MESSAGE value="Implement depth-first-traversal using loop and recursive function" />
     <MESSAGE value="Created queue class and helper file for the BinaryTree.kt class" />
     <MESSAGE value="Added breadth first traversal and comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added breadth first traversal and comments" />
+    <MESSAGE value="Search for a value in tree using breadthFirstTraversal and depthFirstTraversal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search for a value in tree using breadthFirstTraversal and depthFirstTraversal" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
