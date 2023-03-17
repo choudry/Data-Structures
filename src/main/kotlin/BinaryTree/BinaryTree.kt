@@ -53,6 +53,45 @@ fun breadthFirstTraversal(root: Node?): List<Any> {
         return emptyList()
 }
 
+/**
+    Tree include problem is to find out  either tree includes a specific value. We can find it with depth first search as well as breadth first
+    search
+ */
+fun treeIncludesBreadthFirst(root: Node?, target: Any): Boolean {
+    root?.let {
+        val queue = Queue<Node>()
+        queue.push(it)
+        while (queue.isNotEmpty()) {
+            val currentNode = queue.shift()
+            if (currentNode.value == target) return true
+            currentNode.left?.let { leftNode ->
+                queue.push(leftNode)
+            }
+
+            currentNode.right?.let { rightNode ->
+                queue.push(rightNode)
+            }
+        }
+    }
+
+    return false
+}
+
+fun treeIncludesDepthFirst(root: Node?, target: Any): Boolean {
+    root?.let {
+        if (it.value == target) return true
+        it.left?.let { leftNode ->
+            treeIncludesBreadthFirst(leftNode, target)
+        }
+
+        it.right?.let { rightNode ->
+            treeIncludesBreadthFirst(rightNode, target)
+        }
+    }
+
+    return false
+}
+
 fun main() {
     //Nodes declaration
     /*
@@ -78,6 +117,10 @@ fun main() {
 
     println("Depth-First-Traversal: ${depthFirstTraversal(a)}")
     println("Depth-First-Traversal(Recursive): ${recursiveDepthFirstTraversal(a)}")
-
+    println("\n *****Breadth-First-Traversal*****\n")
     println("Breadth-First-Traversal: ${breadthFirstTraversal(a)}")
+
+    println("\n *****Search Value*****")
+    println("Breadth-First-Search: ${treeIncludesBreadthFirst(a, 3)}")
+    println("Depth-First-Search: ${treeIncludesDepthFirst(c, 'F')}")
 }
