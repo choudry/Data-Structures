@@ -182,6 +182,22 @@ fun recursiveTreeMinValue(root: Node?): Int {
     return Int.MAX_VALUE
 }
 
+/**
+ * Max root to leaf path sum is find the maximum value of the path from root to leaf
+ */
+fun maxPathSum(node: Node?): Int {
+    node?.let {
+        if (it.left == null && it.right == null) return it.value as Int
+        val leftSum = maxPathSum(it.left) + it.value as Int
+        val rightSum = maxPathSum(it.right) + it.value as Int
+        return if (leftSum > rightSum) {
+             leftSum
+        } else {
+          rightSum
+        }
+    }
+    return Int.MIN_VALUE
+}
 fun main() {
     //Nodes declaration
     /*
@@ -242,4 +258,7 @@ fun main() {
     println("Tree min value using stack: ${treeMinValueStack(one)}")
     println("Tree min value using queue: ${treeMinValueQueue(one)}")
     println("Tree min value using recursion: ${recursiveTreeMinValue(one)}")
+
+    println("\n ***** Max path sum *****")
+    println("Max path sum value is: ${maxPathSum(one)}")
 }
