@@ -17,6 +17,8 @@ class Stack<T> {
     fun pop(): T = data.removeAt(0)
 
     fun isEmpty() = data.isEmpty()
+
+    fun isNotEmpty() = data.isNotEmpty()
 }
 
 /**

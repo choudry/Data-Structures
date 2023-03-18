@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5df0ea0e-a661-448a-b283-3dbc8b6c9c2a" name="Changes" comment="Search for a value in tree using breadthFirstTraversal and depthFirstTraversal">
+    <list default="true" id="5df0ea0e-a661-448a-b283-3dbc8b6c9c2a" name="Changes" comment="Add fun to calculate the sum of tree nodes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTreeHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTreeHelper.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679023734656</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add fun to calculate the sum of tree nodes">
+      <created>1679051614423</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679051614423</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,7 +144,8 @@
     <MESSAGE value="Created queue class and helper file for the BinaryTree.kt class" />
     <MESSAGE value="Added breadth first traversal and comments" />
     <MESSAGE value="Search for a value in tree using breadthFirstTraversal and depthFirstTraversal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search for a value in tree using breadthFirstTraversal and depthFirstTraversal" />
+    <MESSAGE value="Add fun to calculate the sum of tree nodes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add fun to calculate the sum of tree nodes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -124,6 +124,64 @@ fun recursiveTreeSum(root: Node?): Int{
     return 0
 }
 
+/**
+ * Find minimum value in tree
+*/
+fun treeMinValueQueue(root: Node?): Int {
+    root?.let {
+        val queue = Queue<Node>()
+        queue.push(root)
+        var smallest = Int.MAX_VALUE
+        while (queue.isNotEmpty()) {
+            val current = queue.shift()
+            val currentValue = current.value as Int
+            if (currentValue < smallest) {
+                smallest = currentValue
+            }
+
+            current.left?.let { queue.push(it) }
+            current.right?.let { queue.push(it) }
+        }
+
+        return smallest
+    }
+
+    return Int.MAX_VALUE
+}
+
+fun treeMinValueStack(root: Node?): Int {
+    root?.let {
+        val stack = Stack<Node>()
+        stack.push(root)
+        var smallest = Int.MAX_VALUE
+        while (stack.isNotEmpty()) {
+            val current = stack.pop()
+            val currentValue = current.value as Int
+            if (currentValue < smallest) {
+                smallest = currentValue
+            }
+
+            current.left?.let { stack.push(it) }
+            current.right?.let { stack.push(it) }
+        }
+
+        return smallest
+    }
+
+    return Int.MAX_VALUE
+}
+
+fun recursiveTreeMinValue(root: Node?): Int {
+    root?.let {
+        val current = root.value as Int
+        val leftMin = recursiveTreeMinValue(root.left)
+        val rightMin = recursiveTreeMinValue(root.right)
+        return listOf(current, leftMin, rightMin).min()
+    }
+
+    return Int.MAX_VALUE
+}
+
 fun main() {
     //Nodes declaration
     /*
@@ -179,4 +237,9 @@ fun main() {
   */
     println("Sum of tree: ${treeSum(one)}")
     println("Recursive sum of tree: ${recursiveTreeSum(two)}")
+
+    println("\n ***** Tree minimum value *****")
+    println("Tree min value using stack: ${treeMinValueStack(one)}")
+    println("Tree min value using queue: ${treeMinValueQueue(one)}")
+    println("Tree min value using recursion: ${recursiveTreeMinValue(one)}")
 }
