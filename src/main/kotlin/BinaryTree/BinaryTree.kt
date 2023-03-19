@@ -1,5 +1,9 @@
 package BinaryTree
 
+import Helper.Node
+import Helper.Queue
+import Helper.Stack
+
 fun depthFirstTraversal(root: Node): List<Any> {
     /* Depth-First-Traversal
     Time Complexity = O(n) each node is visited only once
