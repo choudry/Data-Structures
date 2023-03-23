@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5df0ea0e-a661-448a-b283-3dbc8b6c9c2a" name="Changes" comment="Add max path sum function">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/graphs/Graphs.kt" afterDir="false" />
+    <list default="true" id="5df0ea0e-a661-448a-b283-3dbc8b6c9c2a" name="Changes" comment="Create graph file and add method for graph traversal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/BinaryTree/BinaryTreeHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helper/Helper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/graphs/Graphs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/graphs/Graphs.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679133710227</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Create graph file and add method for graph traversal">
+      <created>1679222662671</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679222662671</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -164,7 +169,8 @@
     <MESSAGE value="Add fun to calculate the sum of tree nodes" />
     <MESSAGE value="Add fun to find minimum value in the tree" />
     <MESSAGE value="Add max path sum function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add max path sum function" />
+    <MESSAGE value="Create graph file and add method for graph traversal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create graph file and add method for graph traversal" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
